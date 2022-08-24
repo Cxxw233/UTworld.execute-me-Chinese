@@ -23,10 +23,10 @@ if string_length(str) > 0{
 	}
 }
 i = 0;
-if(global.debug){
-draw_set_color(c_white)
-}else{
-draw_set_color($404040);}
+//if(global.debug){
+//draw_set_color(c_white)
+//}else{
+draw_set_color($404040);//}
 draw_set_font(fntDetermine);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
