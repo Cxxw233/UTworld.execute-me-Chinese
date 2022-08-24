@@ -1,4 +1,5 @@
 {
+  "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
   "preload": false,
@@ -11,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "sndBGM.ogg",
-  "duration": 211.937881,
+  "duration": 211.93288,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

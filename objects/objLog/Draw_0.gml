@@ -23,12 +23,15 @@ if string_length(str) > 0{
 	}
 }
 i = 0;
-draw_set_color($404040);
+if(global.debug){
+draw_set_color(c_white)
+}else{
+draw_set_color($404040);}
 draw_set_font(fntDetermine);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 repeat(9){
 	i++;
 	if len[i] < string_length(strdraw[i]){len[i]++;}
-	draw_text(5, i*20-10, string_copy(strdraw[i], 1, len[i]));
+	draw_text_scribble(5, i*20-10, string_copy(strdraw[i], 1, len[i]));
 }

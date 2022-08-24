@@ -5,11 +5,11 @@ if stop{
 	draw_set_halign(fa_middle);
 	draw_set_valign(fa_center);
 	draw_set_color(c_white);
-	draw_text(320, 240, "Press \"Z\" or enter\nto restart the game");
+	draw_text_scribble(320, 240, "[fntChs]按下[fntDetermine] \"Z\" [fntChs]或[fntDetermine] enter\n[fntChs]来重启游戏");
 }
 
-var _curStep = " curStep: " + string(round(timeline_position));
-var _instNum = " Nums: " + string(instance_number(all));
+var _curStep = " 时间线位置: " + string(round(timeline_position));
+var _instNum = " 实例数量: " + string(instance_number(all));
 var _playerX = " X: ";
 var _playerY = " Y: ";
 if instance_exists(objPlayer){
@@ -19,7 +19,7 @@ if instance_exists(objPlayer){
 	_playerX += string(NaN);
 	_playerY += string(NaN);
 }
-var _curFps = " FPS: " + string(fps) + "/" + string(room_speed);
+var _curFps = " 帧数: " + string(fps) + "/" + string(room_speed);
 
 draw_set_font(fntDebug);
 draw_set_alpha(1);

@@ -1,3 +1,3 @@
 cr.fd = 1;
 cr.sk = 2;
-log.str+="/dataTable.destroy();";
+log.str+="/[fntChs]数据桌.摧毁[fntDetermine]();";

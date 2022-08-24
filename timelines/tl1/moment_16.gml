@@ -1,2 +1,2 @@
 cr.re = 1;
-log.str+="/world.protection.init();";
+log.str+="/[fntChs]世界.保护.初始化[fntDetermine]();";

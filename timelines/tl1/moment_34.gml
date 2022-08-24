@@ -1,2 +1,2 @@
 cr.re = 3;
-log.str+="/world.draw(piecesBoard);";
+log.str+="/[fntChs]世界.绘制[fntDetermine]([fntChs]棋子框[fntDetermine]);";

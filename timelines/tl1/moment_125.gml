@@ -1,1 +1,1 @@
-log.str+="/world.simulation.start(0);";
+log.str+="/[fntChs]世界.模拟.开始[fntDetermine](0);";

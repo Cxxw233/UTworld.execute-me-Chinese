@@ -5,7 +5,7 @@ if activate{
 		draw_set_valign(fa_bottom);
 		draw_set_color(c_gray);
 		draw_set_font(fntDetermine);
-		draw_text(630, 470, "Press [S] to skip");
+		draw_text_scribble(630, 470, "[fntChs]按下[fntDetermine] [[S] [fntChs]来跳过");
 		draw_set_alpha(1);
 	}
 	if sk == 1{
@@ -114,7 +114,9 @@ if activate{
 		draw_set_font(fntDetermine);
 		draw_set_halign(fa_middle);
 		draw_set_valign(fa_center);
-		draw_text_transformed_color(320, 196+len[9]*20, "OBJECT\nCREATION", 1.5, 1.5, 0, c_black, c_black, c_black, c_black, len[9]-len[16]);
+		draw_set_font(fntChs)
+		draw_text_transformed_color(320, 196+len[9]*20, "物 体\n构 建", 1.5, 1.5, 0, c_black, c_black, c_black, c_black, len[9]-len[16]);
+		draw_set_font(fntDetermine);
 		i=0;
 		repeat(16){
 			i++;
@@ -135,13 +137,13 @@ if activate{
 		i=0;
 		repeat(8){
 			if len[12][i]<string_length(word[0, i]){len[12][i]+=0.25;}
-			draw_text_transformed(-40+len[13]*60-len[14]*270, 140+i*25, string_copy(word[0, i], 1, len[12][i]), 2, 2, 0);
+			draw_text_scribble(-40+len[13]*60-len[14]*270, 140+i*25, "[scale,2]"+string_copy(word[0, i], 1, len[12][i]));
 			i++;
 		}
 		i=0;
 		repeat(8){
 			if len[15][i]<string_length(word[1, i]){len[15][i]+=0.25;}
-			draw_text_transformed(680-len[13]*240+len[14]*270, 140+i*25, string_copy(word[1, i], 1, len[15][i]), 2, 2, 0);
+			draw_text_scribble(680-len[13]*240+len[14]*270, 140+i*25, "[scale,2]"+string_copy(word[1, i], 1, len[15][i]));
 			i++;
 		}
 		draw_set_alpha(1);
