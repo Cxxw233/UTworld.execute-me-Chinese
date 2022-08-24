@@ -1,4 +1,8 @@
-with(butCreator){if run<3{instance_destroy();}}
+with(butCreator){
+	if run<3{
+		instance_destroy();
+	}
+}
 with(butBall){if run<3{instance_destroy();}}
 with(instance_create_depth(0, 0, 0, butCreator)){run=3;side=0;yy=160+43.3;}
 with(instance_create_depth(0, 0, 0, butCreator)){run=3;side=0;yy=160+43.3*2;}
