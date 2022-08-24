@@ -5,7 +5,7 @@ window_set_caption(game_display_name);
 
 var sbfdy = parameter_string(0);
 if sbfdy == program_directory + "sbfdy.exe" || sbfdy == program_directory + "fdysb.exe"{
-	show_message("Warning! Warning!\nfdysb!, repeat, fdysb!\n\n(Debug mode is now ON!)");
+	show_message("警告！警告！\nfdysb!, 重复一遍, fdysb!\n\n(调试模式现已开启！)");
 	global.debug = true;
 }else{
 	global.debug = false;
